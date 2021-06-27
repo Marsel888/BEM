@@ -204,6 +204,74 @@ color: #757575;
 }
 
 
+
+
+/* ?Кнопки */
+.button_footer {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: var(--akcent-color);
+  color: var(--background-color-buttom);
+  border-radius: 5px;
+}
+
+.button_footer::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/iconsend.png');
+  margin-left: 10px;
+}
+
+.button-herro {
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  width: 200px;
+  height: 50px;
+  /* display: inline-block; */
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 0;
+  border: 0;
+
+  background: #2196f3;
+  color: var(--background-color-buttom);
+}
+
+.modal_button {
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  width: 200px;
+  height: 50px;
+
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: #2196f3;
+  color: var(--background-color-buttom);
+}
 /* ?  Кнопка закрытия модалки  *//* ! */
 
 .buttom-modal {
@@ -387,24 +455,6 @@ color: #757575;
 }
 
 /* ?Кнопка */
-.buttom {
-  cursor: pointer;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.8;
-  width: 200px;
-  height: 50px;
-  /* display: inline-block; */
-  border-radius: 4px;
-  margin-top: 30px;
-  padding: 0;
-  border: 0;
-
-  background: #2196f3;
-  color: var(--background-color-buttom);
-}
 
 /* !Секция 1 */
 .hero {
@@ -747,33 +797,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   outline: none;
 }
-.subscribe__button {
-  display: flex;
-  width: 200px;
-  height: 50px;
-  margin-left: 10px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
-
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.06em;
-  background-color: var(--akcent-color);
-  color: var(--background-color-buttom);
-  border-radius: 5px;
-}
-
-.subscribe__button::after {
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/iconsend.png');
-  margin-left: 10px;
-}
-
 
 
 
@@ -896,19 +919,20 @@ address {
   color: var(--background-color);
 }
 
-
+/* !Макет №2 */
+/* !Секция №1 */
 /* Макет № 2 */
 /* Кнопки меню */
-.flex-buttom-ul {
+.our-work {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 91px;
 }
-.flex-buttom {
+.our-work-list{
   margin-right: 8px;
 }
-.flex-buttom:last-child {
+.our-work-list:last-child {
   margin-right: 0;
 }
 .button-work {
@@ -1010,8 +1034,14 @@ address {
 .board-five:focus {
   background-color: var(--akcent-color);
 }
+
+/* !Секция №2 */
 /* Примеры работ */
-.ul-one {
+.padding-button {
+  padding-bottom: 94px;
+}
+
+.card {
   margin-top: 34px;
   display: flex;
   flex-wrap: wrap;
@@ -1020,17 +1050,21 @@ address {
   overflow: hidden;
 }
 
-.flex-menu {
+.card__list {
   margin-right: 30px;
   background: #ffffff;
 
   margin-bottom: 30px;
-
+  margin-right: 30px;
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-up {
+.card__img {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.card__animation {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1045,12 +1079,7 @@ address {
   align-items: center;
 }
 
-.img1 {
-  position: relative;
-  overflow: hidden;
-  display: block;
-}
-.p-flex {
+.card__description{
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1062,21 +1091,22 @@ address {
   padding-left: 24px;
   padding-right: 24px;
 }
-.flex-menu:hover .menu-up {
+
+.card__list:hover .card__animation {
   transform: translateY(0);
 }
-.flex-menu:hover {
+.card__list:hover {
   box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
-.flex-menu:nth-child(3n) {
+.card__list:nth-child(3n) {
   margin-right: 0;
 }
-.flex-menu:nth-last-child(-n + 3) {
+.card__list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.portfolio-dib {
+.project {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1085,11 +1115,8 @@ address {
   padding-top: 20px;
 }
 
-.padding-button {
-  padding-bottom: 94px;
-}
 
-.h2-Example-of-work {
+.project__name {
   color: var(--secondary-color);
 
   font-style: normal;
@@ -1102,7 +1129,7 @@ address {
   margin-bottom: 0;
   margin-top: 0;
 }
-.p-Example-of-work {
+.project__techno {
   width: 322px;
   height: 30px;
   left: 239px;
@@ -1202,25 +1229,7 @@ form {
   border-bottom: 1px solid var(--akcent-color);
 }
 
-.modal_button {
-  cursor: pointer;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.8;
-  width: 200px;
-  height: 50px;
 
-  border-radius: 4px;
-  margin-top: 30px;
-  padding: 0;
-  border: 0;
-  margin: 0 auto;
-  margin-top: 15px;
-  background: #2196f3;
-  color: var(--background-color-buttom);
-}
 
 .modal_span {
   font-family: Roboto;
