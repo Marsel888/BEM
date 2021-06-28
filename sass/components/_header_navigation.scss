@@ -1,0 +1,38 @@
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .header-navigation__logo {
+    color: black;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 2157px;
+  
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+  
+    letter-spacing: 0.03em;
+  }
+  
+  .header-navigation__web-logo {
+    color: var(--akcent-color);
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 2157px;
+  
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+  
+    letter-spacing: 0.03em;
+  }
+  

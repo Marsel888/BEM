@@ -44,7 +44,7 @@ p {
   margin-top: 0;
 }
 
-.container {
+/* .container {
   width: 1200px;
   margin: 0;
   padding: 0 15px;
@@ -54,22 +54,26 @@ p {
 .section-number {
   padding-top: 94px;
 }
-
+ */
 
 
 /* ? Модалка */
-.backdrop {
+/* .backdrop {
   position: fixed;
   width: 100%;
   height: 1024px;
   background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1; 
   z-index: 2;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  ;
 }
 .backdrop.is-hidden {
   pointer-events: none;
   opacity: 0;
+  transform: scale(0);
 }
 .modal {
   position: absolute;
@@ -201,12 +205,12 @@ color: #757575;
   background-repeat: no-repeat;
   border-color: var(--akcent-color);
   background-position: center;
-}
+} */
 
 
 
-
-/* ?Кнопки */
+/* 
+  Кнопки
 .button_footer {
   display: flex;
   width: 200px;
@@ -216,7 +220,7 @@ color: #757575;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 187% */
+  
 
   justify-content: center;
   align-items: center;
@@ -243,7 +247,7 @@ color: #757575;
   line-height: 1.8;
   width: 200px;
   height: 50px;
-  /* display: inline-block; */
+
   border-radius: 4px;
   margin-top: 30px;
   padding: 0;
@@ -272,7 +276,7 @@ color: #757575;
   background: #2196f3;
   color: var(--background-color-buttom);
 }
-/* ?  Кнопка закрытия модалки  *//* ! */
+Кнопка закрытия модалки 
 
 .buttom-modal {
   position: absolute;
@@ -300,7 +304,7 @@ color: #757575;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ */
 
 
 
@@ -331,7 +335,7 @@ color: #757575;
 
 
 /* !Шапка Навигация  */
-.header-navigation {
+/* .header-navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -367,12 +371,12 @@ color: #757575;
   line-height: 1.19;
 
   letter-spacing: 0.03em;
-}
+} */
 
 
 
 /* !Menu */
-.header-menu {
+/* .header-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -418,10 +422,10 @@ color: #757575;
   position: absolute;
   bottom: 0;
   border-radius: 5px;
-}
+} */
 
 /* header-contact */
-.header-contact {
+/* .header-contact {
   display: flex;
   margin-left: 300px;
 }
@@ -452,12 +456,12 @@ color: #757575;
 }
 .header-contact__icon {
   padding-right: 10px;
-}
+} */
 
 /* ?Кнопка */
 
 /* !Секция 1 */
-.hero {
+/* .hero {
   background-color: var(--backgroung-secondary-color);
   text-align: center;
   padding: 200px 0px 200px 0px;
@@ -483,10 +487,10 @@ color: #757575;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color-buttom);
-}
+} */
 /* !Секция 2  */
 
-.our-advantages {
+/* .our-advantages {
   display: flex;
 }
 
@@ -535,13 +539,13 @@ color: #757575;
   font-weight: normal;
   line-height: 1.7;
   margin-top: 10px;
-}
+} */
 
 /* !Секция №3 */
 .section--padding-botom {
   padding-bottom: 94px;
 }
-.work-doing {
+/* .work-doing {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
@@ -585,10 +589,10 @@ background-color: white;
   line-height: 16px;
   align-items: center;
   letter-spacing: 0.03em;
-}
+} */
 
 /* !Секция №4 */
-.team {
+/* .team {
   text-align: center;
   font-size: 36px;
   line-height: 1.1;
@@ -668,11 +672,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 20px;
   padding: 10px;
   
-}
+} */
 
 /* !Секция №5 */
 
-.our-clients {
+/* .our-clients {
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -707,10 +711,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .our-clients-permanent__client:focus {
   fill: var(--akcent-color);
   border-color: var(--akcent-color);
-}
+} */
 
 /* !Футер */
-.footer {
+/* .footer {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -796,7 +800,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 15px;
   color: #ffffff;
   outline: none;
-}
+} */
 
 
 
